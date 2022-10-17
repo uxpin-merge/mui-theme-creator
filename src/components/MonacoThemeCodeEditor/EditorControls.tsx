@@ -30,7 +30,7 @@ function EditorControls({ onRedo, onUndo, onSave }: EditorControlsProps) {
       alignItems: "center",
     }}>
       <Box sx={{ display: "flex" }}>
-        <EditorButton />
+        {/* <EditorButton /> */}
         <CopyButton />
         <Divider orientation="vertical" flexItem />
         <Tooltip title="Undo (Ctrl + Z)">
@@ -74,15 +74,20 @@ const CopyButton = ({ }) => {
     (state: RootState) => state.editor.outputTypescript
   )
   const [open, setOpen] = useState(false)
+  // const copyToClipboard = () => {
+  //   let codeToCopy = themeInput
+  //   if (!outputTypescript) {
+  //     // naively strip out typescript (first three lines)
+  //     codeToCopy = [
+  //       `export const themeOptions = {`,
+  //       ...themeInput.split("\n").slice(3),
+  //     ].join("\n")
+  //   }
+  //   navigator.clipboard.writeText(codeToCopy).then(() => setOpen(true))
+  // }
+
   const copyToClipboard = () => {
     let codeToCopy = themeInput
-    if (!outputTypescript) {
-      // naively strip out typescript (first three lines)
-      codeToCopy = [
-        `export const themeOptions = {`,
-        ...themeInput.split("\n").slice(3),
-      ].join("\n")
-    }
     navigator.clipboard.writeText(codeToCopy).then(() => setOpen(true))
   }
 

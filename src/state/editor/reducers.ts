@@ -4,14 +4,22 @@ import JSON5 from "json5"
 import { ThemeOptions } from "@mui/material"
 import { RootState } from "../types"
 
-const stringify = (themeOptions: ThemeOptions) => {
-  return `import { ThemeOptions } from '@mui/material/styles';
+// const stringify = (themeOptions: ThemeOptions) => {
+//   return `import { ThemeOptions } from '@mui/material/styles';
 
-export const themeOptions: ThemeOptions = ${JSON5.stringify(
+// export const themeOptions: ThemeOptions = ${JSON5.stringify(
+//     themeOptions,
+//     null,
+//     2
+//   )};`
+// }
+
+const stringify = (themeOptions: ThemeOptions) => {
+  return JSON.stringify(
     themeOptions,
     null,
     2
-  )};`
+  );
 }
 
 export const initialState: EditorState = {

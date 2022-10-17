@@ -56,7 +56,7 @@ export default function useEditor(editorRef: MutableEditorRefType) {
           monaco.editor.getModel(monaco.Uri.parse("file:///main.tsx")) ||
           monaco.editor.createModel(
             themeInput,
-            "typescript",
+            "text",
             monaco.Uri.parse("file:///main.tsx")
           ),
       }

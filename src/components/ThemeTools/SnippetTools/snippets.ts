@@ -83,6 +83,22 @@ const snippets: Array<SnippetModification> = [
     ],
   },
   {
+    title: "Button Override",
+    configs: [
+      {
+        path: "overrides.MuiButton",
+        value: {
+          root: {
+            width: 42,
+            height: 26,
+            padding: 0,
+            margin: 8,
+          },
+        },
+      },
+    ],
+  },
+  {
     title: "Gradient Buttons",
     configs: [
       {
