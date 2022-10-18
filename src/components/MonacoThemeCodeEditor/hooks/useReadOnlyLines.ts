@@ -9,7 +9,7 @@ import { verbose } from "src/utils"
 //    and opening the themeOptions objects
 //    last line is a bracket closing the themeOptions object
 const readOnlyLines = {
-  top: 3,
+  top: 1,
   bottom: 1,
 }
 
