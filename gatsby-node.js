@@ -17,7 +17,7 @@ exports.onCreateWebpackConfig = ({
   actions.setWebpackConfig({
     plugins: [
       new MonacoWebpackPlugin({
-        languages: ["javascript", "css", "html", "typescript"],
+        languages: ["javascript", "css", "html", "typescript", "xml"],
       }),
     ],
   })

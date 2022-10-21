@@ -45,7 +45,7 @@ const snippets: Array<SnippetModification> = [
     title: "iOS Switches",
     configs: [
       {
-        path: "overrides.MuiSwitch",
+        path: "components.MuiSwitch.styleOverrides",
         value: {
           root: {
             width: 42,
@@ -102,7 +102,7 @@ const snippets: Array<SnippetModification> = [
     title: "Gradient Buttons",
     configs: [
       {
-        path: "overrides.MuiButton",
+        path: "components.MuiButton.styleOverrides",
         value: {
           root: {
             background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -119,7 +119,7 @@ const snippets: Array<SnippetModification> = [
   },
   {
     title: "Disable Ripple",
-    configs: [{ path: "props.MuiButtonBase.disableRipple", value: true }],
+    configs: [{ path: "components.MuiButtonBase.defaultProps.disableRipple", value: true }],
   },
   {
     title: "Dense Lists, Tables, Menus",

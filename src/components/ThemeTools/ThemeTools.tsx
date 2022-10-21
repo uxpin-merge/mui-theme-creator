@@ -42,6 +42,12 @@ const toolPanels: Array<{
       id: typographyToolsId,
     },
     {
+      label: "Overrides",
+      icon: <SnippetsIcon />,
+      tools: SnippetTools,
+      id: snippetToolsId,
+    },
+    {
       label: "Snippets",
       icon: <SnippetsIcon />,
       tools: SnippetTools,

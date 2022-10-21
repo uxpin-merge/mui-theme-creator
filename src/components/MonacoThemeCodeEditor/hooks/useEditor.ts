@@ -53,11 +53,11 @@ export default function useEditor(editorRef: MutableEditorRefType) {
         value: themeInput,
         // this will ensure the model is created only once
         model:
-          monaco.editor.getModel(monaco.Uri.parse("file:///main.tsx")) ||
+          monaco.editor.getModel(monaco.Uri.parse("file:///main.xml")) ||
           monaco.editor.createModel(
             themeInput,
-            "text",
-            monaco.Uri.parse("file:///main.tsx")
+            'xml',
+            monaco.Uri.parse("file:///main.xml")
           ),
       }
     )
