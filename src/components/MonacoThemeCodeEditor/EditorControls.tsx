@@ -89,6 +89,9 @@ const CopyButton = ({ }) => {
   const copyToClipboard = () => {
     let codeToCopy = themeInput
     navigator.clipboard.writeText(codeToCopy).then(() => setOpen(true))
+
+    // Send `theme` to the parent using the postMessage method on the window.parent reference.
+    window.parent.postMessage(codeToCopy, "*");
   }
 
   return <>
