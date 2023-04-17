@@ -91,8 +91,8 @@ const CopyButton = ({ }) => {
     navigator.clipboard.writeText(codeToCopy).then(() => setOpen(true))
 
     // Send `theme` to the parent using the postMessage method on the window.parent reference.
-    window.parent.postMessage(codeToCopy, "*");
-    alert("test")
+    // window.parent.postMessage(codeToCopy, "*");
+    // alert("test")
   }
 
   return <>
