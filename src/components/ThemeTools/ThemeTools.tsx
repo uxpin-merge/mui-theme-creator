@@ -41,18 +41,18 @@ const toolPanels: Array<{
       tools: TypographyTools,
       id: typographyToolsId,
     },
-    {
-      label: "Overrides",
-      icon: <SnippetsIcon />,
-      tools: SnippetTools,
-      id: snippetToolsId,
-    },
-    {
-      label: "Snippets",
-      icon: <SnippetsIcon />,
-      tools: SnippetTools,
-      id: snippetToolsId,
-    },
+    // {
+    //   label: "Overrides",
+    //   icon: <SnippetsIcon />,
+    //   tools: SnippetTools,
+    //   id: snippetToolsId,
+    // },
+    // {
+    //   label: "Snippets",
+    //   icon: <SnippetsIcon />,
+    //   tools: SnippetTools,
+    //   id: snippetToolsId,
+    // },
   ]
 
 export default function ThemeTools() {

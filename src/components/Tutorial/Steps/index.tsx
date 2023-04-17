@@ -6,7 +6,7 @@ import savedThemesSteps from "./savedThemesSteps"
 
 export default [
   ...toolPanelSteps,
-  ...codeEditorSteps,
+  // ...codeEditorSteps,
   ...previewWindowSteps,
   ...componentSamplesSteps,
   ...savedThemesSteps,

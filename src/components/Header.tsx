@@ -31,27 +31,27 @@ const Header = (props: AppBarProps) => {
             variant="caption"
             sx={{ typography: "caption", fontWeight: 700 }}
           >
-            {"└─ "}
+            {/* {"└─ "} */}
             <Link
               href="https://mui.com/"
               target="_blank"
               rel="noreferrer"
               underline="hover"
             >
-              {`@mui/material@${muiVersion}`}
+              {/* {`@mui/material@${muiVersion}`} */}
             </Link>
           </Typography>
         </div>
         <div>
           <TutorialButton />
-          <IconButton
+          {/* <IconButton
             href="https://github.com/Zenoo/mui-theme-creator"
             target="_blank"
             rel="noreferrer"
             size="large"
           >
             <GitHubIcon />
-          </IconButton>
+          </IconButton> */}
         </div>
       </Toolbar>
     </AppBar>

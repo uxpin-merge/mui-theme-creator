@@ -152,5 +152,5 @@ export default [
   PaletteTutorialStep,
   FontTutorialStep,
   TypographyTutorialStep,
-  SnippetsTutorialStep,
+  // SnippetsTutorialStep,
 ]
